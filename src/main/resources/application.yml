@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://ep-icy-heart-98819102.eu-central-1.aws.neon.fl0.io:5432/database?sslmode=${DB_SSL_MODE}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://viaduct.proxy.rlwy.net:20559/railway
+    username: ${MYSQLUSER}
+    password: ${MYSQL_ROOT_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
