@@ -18,8 +18,8 @@
 
 * **URL**: https://backendwllt-production.up.railway.app/
 * **ENDPOINTS SIN AUTORIZACION**:
-     - **POST** /register                 -          Registro del usuario - Crea una cuenta automaticamente con un cvu aleatoreo y un alias.
-     - **GET** /login                    -          Logeo del usuario    - Devuelve el berear token
+     - **POST** /register                 -          Registro del usuario - Crea una cuenta automaticamente con un cvu aleatoreo y un alias. Enviar nombre dni email password y rol USER . 
+     - **GET** /login                    -          Logeo del usuario    - Devuelve el berear token. Se logea por email y password. 
 * **ENDPOINTS CON AUTORIZACION(JWT)**:
 * **POST**:
   - /operaciones/deposito?monto=&cuentaDestino=         -     Depositar saldo a una cuenta, monto se le pasa un numero bigDecimal y cuentaDestino recibe un alias-cvu-id de cuenta
