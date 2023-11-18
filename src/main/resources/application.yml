@@ -1,11 +1,9 @@
-server:
-  port: 8080
 spring:
   datasource:
-    url:
-    username:
-    password:
-    driver-class-name: 
+    url: jdbc:postgresql://ep-icy-heart-98819102.eu-central-1.aws.neon.fl0.io:5432/database?sslmode=${DB_SSL_MODE}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
